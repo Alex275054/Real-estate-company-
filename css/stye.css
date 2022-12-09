@@ -108,7 +108,7 @@ html {
   color: #000;
 }
 .header__list-item a:hover {
-  color: rgb(61, 60, 60);
+  color: rgb(122, 122, 122);
 }
 .header__list-item:not(:last-child) {
   margin-right: 90px;
@@ -273,6 +273,13 @@ html {
 .membership__sub-title {
   font-size: 16px;
   margin-bottom: 65px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.membership__sub-title:hover {
+  color: rgb(95, 86, 86);
 }
 .membership__sub-title::after {
   content: url("../img/membership/membership-next.png");
@@ -398,6 +405,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .gallery-items-show {
@@ -415,6 +423,7 @@ html {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 280px;
           flex: 0 0 280px;
+  cursor: pointer;
 }
 /* ------------------ */
 .show-slider {
@@ -526,6 +535,7 @@ html {
 
 .item-members-sponsors__img {
   margin-right: 80px;
+  margin-bottom: 30px;
 }
 .see {
   padding: 120px 0;
@@ -549,6 +559,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .swiper-button-r {
@@ -673,6 +684,10 @@ html {
 .top-block-footer__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.top-block-footer__link:hover {
+  text-decoration: underline;
 }
 
 .bottom-block-footer {
@@ -704,6 +719,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.actions-bottom-block-footer__link {
+  cursor: pointer;
 }
 .actions-bottom-block-footer__link:not(:last-child) {
   margin-right: 15px;
